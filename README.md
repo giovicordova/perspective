@@ -49,10 +49,11 @@ Or with a specific focus area:
 
 ## How It Works
 
-1. **Understand** — reads your project's root documents (README, CLAUDE.md, VISION, package.json, etc.), summarizes what you're building, and confirms with you before proceeding.
-2. **Research** — searches for existing solutions, similar projects, alternative approaches, and current best practices.
+1. **Understand** — reads your project's root documents (README, CLAUDE.md, VISION, package.json, etc.) and any previous perspective reports, then summarizes what you're building.
+2. **Research** — searches for existing solutions, similar projects, alternative approaches, and current best practices. Skips areas covered by previous reports.
 3. **Audit** — uses Context7 MCP to check your actual code against live documentation. Catches deprecated APIs, outdated patterns, and stale dependency versions that Claude wouldn't know about from training data alone.
-4. **Report** — writes a structured analysis to `perspective/{date}-perspective-report.md` with findings and a clear recommendation.
+4. **Report** — writes a structured analysis to `perspective/{date}-perspective-report.md` with findings, a recommendation, and concrete action items as checkboxes.
+5. **Implement** (optional) — asks if you want the fixes applied. If yes, works through each action item, makes the changes, and checks off completed items in the report.
 
 ## Output
 
@@ -63,6 +64,7 @@ Reports go into a `perspective/` folder in your project root. Each report includ
 - Alternative approaches with trade-offs
 - Codebase audit findings (current vs outdated practices)
 - A recommendation: stay the course, adjust, pivot, or adopt
+- Action items with checkboxes (marked off as they're implemented)
 
 ## Requirements
 
