@@ -36,13 +36,13 @@ cp -r skills/perspective ~/.claude/skills/perspective
 
 ## Usage
 
-```
+```text
 /perspective
 ```
 
 Or with a specific focus area:
 
-```
+```text
 /perspective authentication
 /perspective state management
 ```
@@ -68,3 +68,7 @@ Reports go into a `perspective/` folder in your project root. Each report includ
 
 - [Claude Code](https://claude.com/product/claude-code)
 - Node.js 18+ (for Context7 MCP)
+
+## License
+
+MIT
