@@ -8,8 +8,9 @@ description: >
   about alternatives, or wants to validate their architecture against what exists in the ecosystem.
   This skill researches the landscape, audits the codebase against current practices using live
   documentation, and delivers a structured report with honest recommendations.
-allowed-tools: Read, Write, Glob, Grep, Bash, Agent, WebSearch, WebFetch, mcp__context7__*
+allowed-tools: Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__context7__*
 argument-hint: "[focus area]"
+context: fork
 ---
 
 # Perspective
@@ -127,6 +128,6 @@ Create the `perspective/` directory in the project root if it doesn't exist.
 - Specific. Don't say "consider alternatives" — name them, link them, compare them.
 - Respectful of the work done. Acknowledge what's good before pointing out what could be better.
 
-## If the User Provides a Focus Area
+## Focus Area
 
-When invoked with an argument like `/perspective authentication` or `/perspective state management`, narrow all four stages to that specific area instead of the whole project. The same flow applies — understand, research, audit, report — just scoped to the focus area.
+If invoked with an argument (e.g., `/perspective authentication`), $ARGUMENTS defines the focus area. Narrow all four stages to that specific area instead of the whole project.

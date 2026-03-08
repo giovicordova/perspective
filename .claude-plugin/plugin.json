@@ -1,0 +1,8 @@
+{
+  "name": "perspective",
+  "version": "1.0.0",
+  "description": "Reality-check your project's approach before going deep",
+  "author": { "name": "Gio" },
+  "license": "MIT",
+  "keywords": ["perspective", "audit", "reality-check", "landscape"]
+}

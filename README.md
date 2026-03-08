@@ -1,6 +1,6 @@
 # Perspective
 
-A Claude Code skill that reality-checks your project before you go deep.
+A Claude Code plugin that reality-checks your project before you go deep.
 
 ## What It Does
 
@@ -8,9 +8,19 @@ You're mid-project. You invoke `/perspective`. It reads your project docs, confi
 
 ## Install
 
-### 1. Install Context7 MCP (required)
+### As a plugin (recommended)
 
-Perspective uses Context7 to pull live, version-specific library docs at query time — so it can tell you if your code uses deprecated patterns even if Claude's training data says otherwise.
+```bash
+claude plugin add /path/to/perspective
+```
+
+This installs the skill and its Context7 MCP dependency in one step.
+
+### Standalone skill (manual)
+
+If you prefer to install the skill without the plugin wrapper:
+
+1. **Install Context7 MCP** (required for live documentation audit):
 
 ```bash
 claude mcp add context7 -- npx -y @upstash/context7-mcp@latest
@@ -18,9 +28,7 @@ claude mcp add context7 -- npx -y @upstash/context7-mcp@latest
 
 Requires Node.js 18+.
 
-### 2. Install the skill
-
-Copy the `skills/perspective/` folder into your Claude Code skills directory:
+2. **Copy the skill:**
 
 ```bash
 cp -r skills/perspective ~/.claude/skills/perspective
@@ -59,4 +67,4 @@ Reports go into a `perspective/` folder in your project root. Each report includ
 ## Requirements
 
 - [Claude Code](https://claude.com/product/claude-code)
-- [Context7 MCP](https://github.com/upstash/context7) (Node.js 18+)
+- Node.js 18+ (for Context7 MCP)
