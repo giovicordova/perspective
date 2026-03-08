@@ -39,9 +39,11 @@ Read the project's root documents to build a mental model of what's being built,
 - Key technologies and dependencies
 - What stage it's at (early idea, mid-build, mature)
 
-Ask the user: *"Here's what I'm seeing — does this capture it, or should I adjust anything before I research?"*
+Show this to the user, then proceed immediately to Stage 2:
 
-Wait for confirmation. If they correct or add context, update your understanding and confirm again.
+*"Here's what I'm seeing: [summary]. Moving to research — interrupt me if this is off."*
+
+Do NOT wait for confirmation. Keep going.
 
 ## Stage 2: Research the Landscape
 
