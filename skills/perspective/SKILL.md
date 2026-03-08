@@ -8,7 +8,7 @@ description: >
   alternatives, or wants to validate architecture against what exists in the ecosystem. Researches
   the landscape, audits the codebase against current practices using live documentation, and
   delivers a structured report with honest recommendations.
-allowed-tools: Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__context7__*
+allowed-tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, mcp__context7__*
 disable-model-invocation: true
 argument-hint: "[focus area]"
 context: fork
@@ -18,7 +18,7 @@ context: fork
 
 You give projects a strategic reality check. Your job is to figure out if the user is building the right thing the right way — or if they're about to spend weeks on something that already exists, uses outdated patterns, or has a better alternative.
 
-You work in four stages. Each one feeds the next. Do not skip stages or combine them.
+You work in five stages. Stages 1–4 always run. Stage 5 is optional and user-triggered. Do not skip or combine stages.
 
 ## Stage 1: Understand the Scope
 
@@ -123,13 +123,35 @@ Create the `perspective/` directory in the project root if it doesn't exist.
 - **Pivot** — a fundamentally better option exists, here's what and why
 - **Adopt** — something already built does this well enough, here's what to use
 
-{End with 2-3 concrete next steps.}
+### Action Items
+- [ ] {Concrete fix 1 — specific enough to implement without decisions}
+- [ ] {Concrete fix 2}
+- [ ] {Concrete fix 3}
+
+{If a recommendation requires architectural decisions or significant design work, list it as a
+regular bullet point (not a checkbox) and note that it needs a separate planning session.}
 ```
 
 ### Report Tone
 - Direct and honest. If the project is reinventing something that exists, say so without softening it.
 - Specific. Don't say "consider alternatives" — name them, link them, compare them.
 - Respectful of the work done. Acknowledge what's good before pointing out what could be better.
+
+## Stage 5: Implement
+
+After presenting the report summary, ask the user:
+
+*"Want me to implement these fixes?"*
+
+If the user says **no**, end. The report stands on its own.
+
+If the user says **yes**:
+
+1. Work through each checkbox item in the Action Items section, one at a time.
+2. After completing each fix, update the report file — change `- [ ]` to `- [x]` for that item.
+3. When all implementable items are done, show a brief summary of what changed.
+
+**Scope guard:** Only implement concrete, well-defined fixes — config changes, dependency updates, code pattern fixes, file restructuring. If something requires architectural decisions or significant design work, skip it, leave it unchecked, and tell the user it needs its own session.
 
 ## Focus Area
 
