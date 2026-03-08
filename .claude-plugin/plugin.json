@@ -4,5 +4,6 @@
   "description": "Reality-check your project's approach before going deep",
   "author": { "name": "Gio" },
   "license": "MIT",
-  "keywords": ["perspective", "audit", "reality-check", "landscape"]
+  "keywords": ["perspective", "audit", "reality-check", "landscape"],
+  "repository": "https://github.com/giocordova/perspective"
 }

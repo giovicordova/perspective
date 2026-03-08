@@ -1,14 +1,15 @@
 ---
 name: perspective
 description: >
-  Reality-check your project's approach before going deep. Use this skill when the user invokes
-  /perspective, asks "am I on the right track?", "is there a better way?", "has someone already
-  built this?", "reality check", or any request to evaluate whether their current project approach
-  is optimal. Also trigger when the user questions whether they're reinventing the wheel, wonders
-  about alternatives, or wants to validate their architecture against what exists in the ecosystem.
-  This skill researches the landscape, audits the codebase against current practices using live
-  documentation, and delivers a structured report with honest recommendations.
+  Gives a project a strategic reality check. Triggers when the user invokes /perspective, asks
+  "am I on the right track?", "is there a better way?", "has someone already built this?",
+  "reality check", or any request to evaluate whether the current project approach is optimal.
+  Also triggers when the user questions whether they are reinventing the wheel, wonders about
+  alternatives, or wants to validate architecture against what exists in the ecosystem. Researches
+  the landscape, audits the codebase against current practices using live documentation, and
+  delivers a structured report with honest recommendations.
 allowed-tools: Read, Write, Glob, Grep, Bash, WebSearch, WebFetch, mcp__context7__*
+disable-model-invocation: true
 argument-hint: "[focus area]"
 context: fork
 ---
