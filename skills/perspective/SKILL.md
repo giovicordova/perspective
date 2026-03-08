@@ -24,6 +24,8 @@ You work in five stages. Stages 1–4 always run. Stage 5 is optional and user-t
 
 Read the project's root documents to build a mental model of what's being built, why, and how.
 
+**Check for previous reports first.** If a `perspective/` directory exists, read all existing reports inside it. Note what was already researched, recommended, and implemented (checked-off items). You will use this in later stages to avoid duplicating research or repeating recommendations.
+
 **Look for these files (read whichever exist):**
 - README.md, README
 - CLAUDE.md
@@ -63,6 +65,8 @@ Now search the web thoroughly. You're answering three questions:
 - Check GitHub for similar repositories (stars, activity, recency)
 
 Collect everything. Don't filter yet — that's for the report.
+
+**If previous reports exist:** Skip research areas already covered. Focus on what's new — changes since the last report, newly available alternatives, or areas that weren't explored before.
 
 ## Stage 3: Audit the Codebase
 
