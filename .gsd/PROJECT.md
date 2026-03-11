@@ -10,7 +10,7 @@ One command gives you an honest, structured assessment of whether you're buildin
 
 ## Current State
 
-v1.0.0 — functional skill with 5 stages (Understand, Research, Audit, Report, Implement). 164 lines. Plugin packaging works. Has been self-dogfooded. Repo hygiene has gaps (no LICENSE, loose artifacts, gitignore ambiguity). No coherency analysis or lightweight quick mode yet.
+v2 in progress — functional skill with 6 stages (Understand, Research, Coherency, Audit, Report, Implement). 190 lines. Plugin packaging works. Repo hygiene complete (LICENSE, clean README, correct plugin.json). Coherency analysis stage added (contract-verified, runtime verification in S04). No lightweight quick mode yet.
 
 ## Architecture / Key Patterns
 

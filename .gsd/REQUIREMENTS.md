@@ -110,10 +110,10 @@
 | ID | Class | Status | Primary owner | Supporting | Proof |
 |---|---|---|---|---|---|
 | R001 | core-capability | active | pre-existing | M001/S02 | validated |
-| R002 | core-capability | active | M001/S02 | none | unmapped |
+| R002 | core-capability | active | M001/S02 | none | contract-verified (S02) |
 | R003 | core-capability | active | M001/S03 | none | unmapped |
 | R004 | launchability | active | M001/S01 | none | unmapped |
-| R005 | primary-user-loop | active | M001/S02 | none | unmapped |
+| R005 | primary-user-loop | active | M001/S02 | none | contract-verified (S02) |
 | R006 | constraint | active | M001/S04 | all | unmapped |
 | R007 | differentiator | deferred | none | none | unmapped |
 | R008 | admin/support | out-of-scope | none | none | n/a |

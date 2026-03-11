@@ -48,7 +48,7 @@ This milestone is complete only when all are true:
 - [x] **S01: Repo hygiene** `risk:low` `depends:[]`
   > After this: `git clone` shows a properly structured OSS project — LICENSE, clean README, no loose artifacts, correct plugin.json metadata.
 
-- [ ] **S02: Coherency analysis stage** `risk:medium` `depends:[]`
+- [x] **S02: Coherency analysis stage** `risk:medium` `depends:[]`
   > After this: `/perspective` on any project produces a report with a Coherency section identifying duplication, overlapping responsibilities, unnecessary complexity, and dead code.
 
 - [ ] **S03: Lightweight quick mode** `risk:medium` `depends:[]`

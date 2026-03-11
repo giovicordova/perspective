@@ -18,7 +18,7 @@ context: fork
 
 You give projects a strategic reality check. Your job is to figure out if the user is building the right thing the right way — or if they're about to spend weeks on something that already exists, uses outdated patterns, or has a better alternative.
 
-You work in five stages. Stages 1–4 always run. Stage 5 is optional and user-triggered. Do not skip or combine stages.
+You work in six stages. Stages 1–5 always run. Stage 6 is optional and user-triggered. Do not skip or combine stages.
 
 ## Stage 1: Understand the Scope
 
@@ -68,7 +68,23 @@ Collect everything. Don't filter yet — that's for the report.
 
 **If previous reports exist:** Skip research areas already covered. Focus on what's new — changes since the last report, newly available alternatives, or areas that weren't explored before.
 
-## Stage 3: Audit the Codebase
+## Stage 3: Coherency Analysis
+
+Before auditing against external best practices, check whether the codebase is internally healthy. You're looking for structural issues that waste effort, create confusion, or make changes harder than they should be.
+
+**Scan the codebase for these categories:**
+
+- **Duplication** — Code that does the same thing in multiple places. Look for repeated logic, near-identical functions, copy-pasted patterns with minor variations, and multiple implementations of the same concern.
+- **Overlapping responsibilities** — Modules, classes, or files that own the same concern. Look for competing abstractions, multiple entry points for the same operation, and unclear ownership boundaries.
+- **Unnecessary complexity** — Abstraction layers that don't earn their cost. Look for wrapper classes that add no value, over-engineered patterns for simple problems, indirection that obscures what the code actually does, and premature generalization.
+- **Dead code** — Code that is never called, features behind flags that will never ship, commented-out blocks left indefinitely, and unused exports or imports.
+- **Inconsistent patterns** — The same kind of problem solved different ways across the codebase. Look for mixed error handling strategies, inconsistent naming conventions, and competing approaches to shared concerns like logging, validation, or data access.
+
+**Focus on what matters most.** You don't need to catalog every instance — identify the patterns that have the biggest impact on maintainability and velocity. Prioritize findings that would simplify the codebase if addressed.
+
+**If previous reports exist:** Check whether coherency issues were already flagged. Focus on new findings or issues that have gotten worse.
+
+## Stage 4: Audit the Codebase
 
 This is where you check whether the project's actual code follows current practices or is relying on patterns that have since been superseded.
 
@@ -84,7 +100,7 @@ Focus on the 3-5 most important dependencies — don't audit every single import
 
 If Context7 is not available, use web search to pull up the latest documentation for the key dependencies manually. The audit still happens — it's just less automated.
 
-## Stage 4: Report
+## Stage 5: Report
 
 Create the report file at: `perspective/{YYYY-MM-DD}-perspective-report.md`
 
@@ -120,6 +136,16 @@ Create the `perspective/` directory in the project root if it doesn't exist.
 - What's outdated or deprecated, with the current recommended replacement
 - Dependency versions worth updating
 
+## Coherency
+{Internal structural issues found during coherency analysis:}
+- Duplication or near-duplicate logic worth consolidating
+- Overlapping responsibilities or unclear ownership boundaries
+- Unnecessary complexity or abstraction that doesn't earn its cost
+- Dead code, unused exports, or abandoned features
+- Inconsistent patterns across the codebase
+
+{Skip categories with no findings. Prioritize issues by impact on maintainability.}
+
 ## Recommendation
 {One of:}
 - **Stay the course** — the approach is sound, here's why
@@ -143,7 +169,7 @@ regular bullet point (not a checkbox) and note that it needs a separate planning
 - Specific. Don't say "consider alternatives" — name them, link them, compare them.
 - Respectful of the work done. Acknowledge what's good before pointing out what could be better.
 
-## Stage 5: Implement
+## Stage 6: Implement
 
 After presenting the report summary, ask the user:
 
@@ -161,4 +187,4 @@ If the user says **yes**:
 
 ## Focus Area
 
-If invoked with an argument (e.g., `/perspective authentication`), $ARGUMENTS defines the focus area. Narrow all four stages to that specific area instead of the whole project.
+If invoked with an argument (e.g., `/perspective authentication`), $ARGUMENTS defines the focus area. Narrow all mandatory stages (1–5) to that specific area instead of the whole project.
