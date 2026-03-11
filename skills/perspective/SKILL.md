@@ -134,6 +134,8 @@ Create the `perspective/` directory in the project root if it doesn't exist.
 
 {If a recommendation requires architectural decisions or significant design work, list it as a
 regular bullet point (not a checkbox) and note that it needs a separate planning session.}
+
+> After implementing action items, update this file: `- [ ]` → `- [x]`
 ```
 
 ### Report Tone

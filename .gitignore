@@ -5,6 +5,7 @@
 .gsd/runtime/
 .gsd/worktrees/
 .gsd/auto.lock
+.bg-shell/
 .gsd/metrics.json
 .gsd/STATE.md
 .DS_Store

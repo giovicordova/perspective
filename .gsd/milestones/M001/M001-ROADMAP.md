@@ -45,7 +45,7 @@ This milestone is complete only when all are true:
 
 ## Slices
 
-- [ ] **S01: Repo hygiene** `risk:low` `depends:[]`
+- [x] **S01: Repo hygiene** `risk:low` `depends:[]`
   > After this: `git clone` shows a properly structured OSS project — LICENSE, clean README, no loose artifacts, correct plugin.json metadata.
 
 - [ ] **S02: Coherency analysis stage** `risk:medium` `depends:[]`
