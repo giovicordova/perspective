@@ -43,8 +43,8 @@
 - Source: user + audit
 - Primary owning slice: M001/S01
 - Supporting slices: none
-- Validation: contract-verified (S04)
-- Notes: Gaps identified in audit: no LICENSE, loose AUDIT-REPORT.md, /perspective/ gitignored but contains tracked file, repo URL unverified.
+- Validation: validated (M001 — LICENSE exists, plugin.json valid, no loose artifacts, .gitignore correct)
+- Notes: All gaps from audit resolved in M001.
 
 ### R005 — Report includes coherency section
 - Class: primary-user-loop
@@ -65,8 +65,8 @@
 - Source: user (via CLAUDE.md)
 - Primary owning slice: M001/S04
 - Supporting slices: all slices
-- Validation: contract-verified (S04)
-- Notes: Currently 164 lines. Budget is ~336 lines for new features.
+- Validation: validated (M001 — 226 lines, verified under 500)
+- Notes: 226 lines after M001. 274 lines of budget remaining.
 
 ## Deferred
 
@@ -112,9 +112,9 @@
 | R001 | core-capability | active | pre-existing | M001/S02 | validated |
 | R002 | core-capability | active | M001/S02 | none | contract-verified (S02) |
 | R003 | core-capability | active | M001/S03 | none | contract-verified (S03) |
-| R004 | launchability | active | M001/S01 | none | contract-verified (S04) |
+| R004 | launchability | active | M001/S01 | none | validated (M001) |
 | R005 | primary-user-loop | active | M001/S02 | none | contract-verified (S02) |
-| R006 | constraint | active | M001/S04 | all | contract-verified (S04) |
+| R006 | constraint | active | M001/S04 | all | validated (M001) |
 | R007 | differentiator | deferred | none | none | unmapped |
 | R008 | admin/support | out-of-scope | none | none | n/a |
 | R009 | operability | out-of-scope | none | none | n/a |
@@ -123,6 +123,6 @@
 
 - Active requirements: 6
 - Mapped to slices: 6
-- Validated: 1 (R001 — pre-existing)
-- Contract-verified: 5 (R002, R003, R004, R005, R006)
+- Validated: 3 (R001 — pre-existing, R004 — M001, R006 — M001)
+- Contract-verified: 3 (R002, R003, R005)
 - Unmapped active requirements: 0
