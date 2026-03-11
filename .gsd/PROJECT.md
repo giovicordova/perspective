@@ -10,7 +10,7 @@ One command gives you an honest, structured assessment of whether you're buildin
 
 ## Current State
 
-v2 in progress — functional skill with 6 stages (Understand, Research, Coherency, Audit, Report, Implement) plus lightweight quick mode. 226 lines. Plugin packaging works. Repo hygiene complete (LICENSE, clean README, correct plugin.json). Coherency analysis stage added (contract-verified). Quick mode added (contract-verified) — `/perspective quick <topic>` runs 3-step fast flow. S04 (final polish, README, end-to-end UAT) remaining.
+v2 complete — functional skill with 6 stages (Understand, Research, Coherency, Audit, Report, Implement) plus lightweight quick mode. 226 lines. Plugin packaging works. Repo hygiene complete (LICENSE, clean README, correct plugin.json). All contract checks passing. Awaiting user UAT (invoke `/perspective` and `/perspective quick` on a real project).
 
 ## Architecture / Key Patterns
 
@@ -26,4 +26,4 @@ See `.gsd/REQUIREMENTS.md` for the explicit capability contract, requirement sta
 
 ## Milestone Sequence
 
-- [ ] M001: Perspective v2 — Add coherency analysis, quick mode, and open-source polish
+- [ ] M001: Perspective v2 — Add coherency analysis, quick mode, and open-source polish (all slices complete, pending UAT)

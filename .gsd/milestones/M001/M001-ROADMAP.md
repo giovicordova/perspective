@@ -54,7 +54,7 @@ This milestone is complete only when all are true:
 - [x] **S03: Lightweight quick mode** `risk:medium` `depends:[]`
   > After this: `/perspective quick auth setup` gives a fast, focused answer — reads code, checks live docs, responds directly — without running the full 5-stage pipeline.
 
-- [ ] **S04: Final polish and line budget** `risk:low` `depends:[S01,S02,S03]`
+- [x] **S04: Final polish and line budget** `risk:low` `depends:[S01,S02,S03]`
   > After this: SKILL.md is verified under 500 lines, README documents all new features, and a full `/perspective` run on a test project produces the expected output.
 
 ## Boundary Map

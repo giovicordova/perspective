@@ -1,24 +1,22 @@
 # GSD State
 
-**Active Milestone:** M001 — Perspective v2
-**Active Slice:** S03 complete — ready for S04
-**Active Task:** none
-**Phase:** S03 done — S04 (Final polish and line budget) is next
-**Slice Branch:** gsd/M001/S03
-**Active Workspace:** gsd/M001/S03
-**Next Action:** S04 planning and execution (final polish, README updates, end-to-end UAT)
-**Last Updated:** 2026-03-11
-**Requirements Status:** 6 active · 1 validated · 3 contract-verified · 1 deferred · 2 out of scope
+## Current Position
 
-## Recent Decisions
+- **Milestone:** M001 — Perspective v2
+- **Slice:** S04 — Final Polish and Line Budget (complete)
+- **Task:** all complete
+- **Branch:** `gsd/M001/S04`
+- **Mode:** auto
 
-- D001: Coherency always included in full runs (not separate command)
-- D002: Quick mode via `/perspective quick <topic>` prefix
-- D003: Coherency findings in same report, new section
-- D004: Minimal OSS packaging (LICENSE, README, metadata)
-- D005: Coherency stage between Research and Audit
-- D006: Quick mode uses ### sub-headings, ## reserved for top-level sections
+## Milestone Progress
 
-## Blockers
+- [x] S01: Repo hygiene — complete
+- [x] S02: Coherency analysis stage — complete
+- [x] S03: Lightweight quick mode — complete
+- [x] S04: Final polish and line budget — complete
 
-- (none)
+## Key Facts
+
+- SKILL.md: 226 lines (budget: <500)
+- All 4 slices complete, all contract checks passing
+- M001 pending user UAT: `/perspective` and `/perspective quick <topic>` on a real project
