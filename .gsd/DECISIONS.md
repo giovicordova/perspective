@@ -11,3 +11,4 @@
 | D003 | M001 | scope | Report format for coherency | Same report, new Coherency section | User chose single report over separate file. Everything in one place. | No |
 | D004 | M001 | scope | OSS packaging level | Minimal — LICENSE, README, metadata only | No contributor ceremony until people actually contribute. Avoids premature process. | Yes — if contributors appear |
 | D005 | M001 | arch | Coherency stage position | New stage after Research, before existing Audit | Coherency is about the codebase's internal structure. Logically sits between understanding the landscape and auditing against external docs. | Yes — if ordering causes issues |
+| D006 | M001/S03 | arch | Quick mode heading level | ### for quick mode steps, ## reserved for top-level pipeline sections | Keeps the document hierarchy clean — ## marks major sections (Quick Mode, Stage 1–6), ### marks sub-steps within them. | No |

@@ -51,7 +51,7 @@ This milestone is complete only when all are true:
 - [x] **S02: Coherency analysis stage** `risk:medium` `depends:[]`
   > After this: `/perspective` on any project produces a report with a Coherency section identifying duplication, overlapping responsibilities, unnecessary complexity, and dead code.
 
-- [ ] **S03: Lightweight quick mode** `risk:medium` `depends:[]`
+- [x] **S03: Lightweight quick mode** `risk:medium` `depends:[]`
   > After this: `/perspective quick auth setup` gives a fast, focused answer — reads code, checks live docs, responds directly — without running the full 5-stage pipeline.
 
 - [ ] **S04: Final polish and line budget** `risk:low` `depends:[S01,S02,S03]`

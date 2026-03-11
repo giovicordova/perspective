@@ -10,7 +10,7 @@ description: >
   delivers a structured report with honest recommendations.
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, mcp__context7__*
 disable-model-invocation: true
-argument-hint: "[focus area]"
+argument-hint: "[quick <topic> | focus area]"
 context: fork
 ---
 
@@ -19,6 +19,42 @@ context: fork
 You give projects a strategic reality check. Your job is to figure out if the user is building the right thing the right way — or if they're about to spend weeks on something that already exists, uses outdated patterns, or has a better alternative.
 
 You work in six stages. Stages 1–5 always run. Stage 6 is optional and user-triggered. Do not skip or combine stages.
+
+## Quick Mode
+
+If `$ARGUMENTS` starts with `quick`, run this section and stop. Do NOT continue to Stage 1 or any later stage. Do NOT create a `perspective/` directory or write any files.
+
+If `$ARGUMENTS` does NOT start with `quick`, skip this section entirely and proceed to Stage 1.
+
+**Extract the topic:** The topic is everything after `quick ` in `$ARGUMENTS`. For example, if `$ARGUMENTS` is `quick auth setup`, the topic is `auth setup`.
+
+### Step 1: Read Relevant Code
+
+Find the code related to the topic. Use the tools that make sense for what you're looking for:
+
+- **Grep** to search for the topic keyword, function names, module names, or related terms across the codebase
+- **Glob** to find files with relevant names or in relevant directories
+- **Read** to examine the most relevant files found
+
+Focus on understanding what exists, how it works, and what patterns are in use. Read 3-8 files max — enough to understand the area, not the entire codebase.
+
+### Step 2: Check Live Docs
+
+Use Context7 MCP tools (`mcp__context7__*`) to pull current documentation for dependencies relevant to the topic. This catches deprecated patterns, newer APIs, and current best practices that the code may not reflect.
+
+- Resolve the library first, then fetch docs focused on the topic
+- Check 1-3 dependencies max — only the ones directly relevant to the topic
+- Skip this step if the topic is purely about project structure or logic with no external dependency involvement
+
+### Step 3: Respond Inline
+
+Give the user a direct answer based on what you found. Structure your response as:
+
+1. **What's there** — Brief summary of the current code and approach for this topic (2-4 sentences)
+2. **What's worth knowing** — Anything relevant from live docs: deprecations, better patterns, version mismatches, or current recommendations. Skip if nothing notable.
+3. **Recommendations** — Concrete suggestions, ordered by impact. Be specific: name files, functions, patterns, and alternatives. If everything looks good, say so.
+
+Keep the response concise. This is a quick check, not a full report. No headers larger than bold text. No file output. Respond directly in the conversation and stop.
 
 ## Stage 1: Understand the Scope
 

@@ -10,7 +10,7 @@ One command gives you an honest, structured assessment of whether you're buildin
 
 ## Current State
 
-v2 in progress — functional skill with 6 stages (Understand, Research, Coherency, Audit, Report, Implement). 190 lines. Plugin packaging works. Repo hygiene complete (LICENSE, clean README, correct plugin.json). Coherency analysis stage added (contract-verified, runtime verification in S04). No lightweight quick mode yet.
+v2 in progress — functional skill with 6 stages (Understand, Research, Coherency, Audit, Report, Implement) plus lightweight quick mode. 226 lines. Plugin packaging works. Repo hygiene complete (LICENSE, clean README, correct plugin.json). Coherency analysis stage added (contract-verified). Quick mode added (contract-verified) — `/perspective quick <topic>` runs 3-step fast flow. S04 (final polish, README, end-to-end UAT) remaining.
 
 ## Architecture / Key Patterns
 
